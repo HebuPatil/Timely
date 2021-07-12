@@ -4,7 +4,7 @@ import { View, Text, Button, StyleSheet} from 'react-native'
 const tasks = ({navigation}) => {
     return (
         <View style={styles.container}>
-            <Text>Tasks</Text>
+            <Text style={styles.text}>Tasks</Text>
         </View>
     )
 }
@@ -16,6 +16,9 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center', 
-        backgroundColor: 'blue'
+        backgroundColor: '#0C0C0E',
+    },
+    text: {
+        color: 'white'
     }
 })

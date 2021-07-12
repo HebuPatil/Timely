@@ -4,7 +4,7 @@ import { View, Text, Button, StyleSheet} from 'react-native'
 const statistics = ({navigation}) => {
     return (
         <View style={styles.container}>
-            <Text>Statistics</Text>
+            <Text style={styles.text}>Statistics</Text>
         </View>
     )
 }
@@ -16,6 +16,9 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center', 
-        backgroundColor: 'blue'
+        backgroundColor: '#0C0C0E',
+    },
+    text: {
+        color: 'white'
     }
 })
