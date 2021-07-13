@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React, {useRef, useState} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -8,7 +9,9 @@ import { Appearance } from 'react-native';
 const App = () => {
 
   return (
+    <NavigationContainer>
       <Tabs/>
+    </NavigationContainer>
 
   );
 }

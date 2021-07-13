@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {View, Text, Image} from 'react-native'
-import { NavigationContainer, DarkTheme } from '@react-navigation/native';
+import { NavigationContainer} from '@react-navigation/native';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';  
 
@@ -14,12 +14,7 @@ const Tab = createMaterialBottomTabNavigator();
 
 const Tabs = () => {
     return (
-        <NavigationContainer>
-            <Tab.Navigator
-                barStyle={{
-                    backgroundColor: '#1E1F22',
-                }}
-            >
+            <Tab.Navigator barStyle={{backgroundColor: '#1E1F22',}}>
                 <Tab.Screen name="Schedule" component={schedule} 
                     options={{
                         tabBarIcon: ({focused}) => (
@@ -36,12 +31,11 @@ const Tabs = () => {
                                 
                             </View>
                         ),
-                    }}
-                />
+                    }}/>
                 <Tab.Screen name="Focus" component={focus}
                     options={{
                         tabBarIcon: ({focused}) => (
-                            <View style={{alignItems: 'center', justifyContent: 'center'}}>
+                            <View style={{ justifyContent: 'center'}}>
                                 <Image
                                     source={require('../assets/icons/focus_icon.png')}
                                     resizeMode='contain'
@@ -54,10 +48,9 @@ const Tabs = () => {
                                 
                             </View>
                         ),
-                    }}
-                />
+                    }}/>
                 <Tab.Screen name="Tasks" component={tasks}
-                options={{
+                    options={{
                         tabBarIcon: ({focused}) => (
                             <View style={{alignItems: 'center', justifyContent: 'center'}}>
                                 <Image
@@ -74,7 +67,7 @@ const Tabs = () => {
                         ),
                     }}/>
                 <Tab.Screen name="Statistics" component={statistics}
-                options={{
+                    options={{
                         tabBarIcon: ({focused}) => (
                             <View style={{alignItems: 'center', justifyContent: 'center'}}>
                                 <Image
@@ -91,7 +84,6 @@ const Tabs = () => {
                         ),
                     }}/>
             </Tab.Navigator>
-        </NavigationContainer>
     )
 }
 
