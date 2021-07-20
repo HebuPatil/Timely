@@ -6,6 +6,7 @@ Prerequisites:
 - Yarn
 - Expo
 
+
 Run:<br>
 1. Clone repo<br>
 2. Navigate to directory using ```cd Timely```<br>
