@@ -64,8 +64,7 @@ function ActivityItem({navigation, item, deleteHandler}) {
                 onPress={() => navigation.navigate('Timer')}
                 style={{
                     width: 200,
-                    marginTop: 20,
-                    top: 20
+                    marginTop: 20
                 }}
             >
                 <Card.Title title={item.name} />
