@@ -9,16 +9,36 @@ const statistics = ({navigation}) => {
     )
 }
 
-export default statistics;
-
+// stopwatch widget
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center', 
         backgroundColor: '#0C0C0E',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     text: {
-        color: 'white'
-    }
-})
+        color: 'white',
+    },
+    header: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    footer: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+    },
+    timer: {
+        fontSize: 60,
+    },
+    buttonContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+});
+
+export default statistics;
