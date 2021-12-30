@@ -1,15 +1,83 @@
-.container {
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  background-color: #0C0C0E;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.background {
+  position: absolute;
+  width: 414px;
+  height: 934px;
+  left: 0px;
+  top: 0px;
+  background: #0C0C0E;
+}
+.title {
+  position: absolute;
+  width: 184px;
+  height: 51px;
+  left: 24px;
+  top: 64px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 51px;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
 }
 
-.Timers {
-  color: #fff;
-  width: 180px;
-  margin: 0 auto;
-  text-align: center;
+.rectangle48 {
+  position: absolute;
+  width: 16px;
+  height: 238px;
+  left: 25px;
+  top: 152px;
+  background: #28292d;
+  border-radius: 15px 0px 0px 15px;
+  z-index:1;}
+
+.pfp {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  left: 347px;
+  top: 70px;
+  /*background: url("red ca.png");*/
+  border: 3px solid #FFFFFF;
+  box-shadow: -7px 0px 20px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 33.5px;
+}
+
+.tracker-widget {
+  position: absolute;
+  width: 366px;
+  height: 238px;
+  left: 24px;
+  top: 152px;
+  background: #151618;
+  box-shadow: 0px 4px 51px 5px rgba(0, 0, 0, 0.22);
+  border-radius: 15px;
+}
+
+.header {
+  position: absolute;
+  width: 76px;
+  height: 22px;
+  left: 26px;
+  /*top: 174px;*/
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.timer-box {
+  position: absolute;
+  width: 314px;
+  height: 92px;
+  left: 26px;
+  top: 44px;
+  background: rgba(80, 212, 93, 0.15);
+  border-radius: 14px;
 }
 
 #display {
@@ -20,20 +88,103 @@
   font-size: 36px;
 }
 
+.timer-text {
+  position: absolute;
+  width: 197px;
+  height: 59px;
+  left: 16px;
+  top: 19px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  color: #50D45D;
+}
+
+.small-timer-text {
+  position: absolute;
+  width: 33px;
+  height: 16px;
+  left: 228px;
+  top: 52px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  color: #50D45D;
+}
+
+.button {
+  /* smth goes here */
+}
+
 #buttons button:nth-child(2) {
   margin-left: 8px;
 }
 
-button {
-  font-size: 16px;
-  background-color: rgb(217, 60, 35);
-  color: #fff;
-  border-radius: 8px;
-  border: none;
-  padding: 6px 12px;
-  cursor: pointer;
+.button-start {
+  /* smth goes here */
 }
 
+.button-text-start {
+  /*smth goes here */
+}
+
+.button-stop {
+  position: absolute;
+  width: 153px;
+  height: 32px;
+  left: 187px;
+  top: 181px;
+  background: rgba(255, 59, 59, 0.15);
+  border-radius: 9px;
+}
+
+.stop-button {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  left: 10px;
+  top: 9px;
+  background: #FF3B3B;
+  border-radius: 2px;
+}
+
+.button-text-stop {
+  position: absolute;
+  width: 111px;
+  height: 17px;
+  left: 32px;
+  top: 339px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FF3B3B;
+}
+
+
+.button-reset {
+  /* smth goes here */
+}
+
+.button-text-reset {
+  /*smth goes here */
+}
+
+
+.button-resume {
+  /* smth goes here */
+}
+
+.button-text-resume {
+  /*smth goes here */
+}
+
+/*
 button:hover {
   background-color: rgb(173, 47, 28);
 }
@@ -45,3 +196,4 @@ button:active {
 button:focus {
   outline: 0;
 }
+*/

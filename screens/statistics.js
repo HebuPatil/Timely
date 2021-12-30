@@ -33,25 +33,40 @@ const statistics = () => {
     }, [timerOn]);
 
     return (
-        <div className="container">
-            <div className="Timers">
-                <h2>Exercise</h2>
-                <div id="display">
-                    <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
-                    <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
-                    <span>{("0" + ((time / 10) % 100)).slice(-2)}</span>
+        <div className="background">
+        <span className="title">Statistics</span>
+        <span className="pfp"></span>
+        <div className="rectangle48"></div>
+            <div className="tracker-widget">
+                <h2 className="header">Exercise</h2>
+                <div className="timer-box">
+                    <div id="display" className="timer-text">
+                        <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
+                        <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
+                        <span>{("0" + ((time / 10) % 100)).slice(-2)}</span>
+                    </div>
+                    <span className="small-timer-text">/1hr</span>
                 </div>
                 <div id="buttons">
-                    {!timerOn && time === 0 && (
-                        <button onClick={() => setTimerOn(true)}>Start</button>
-                    )}
-                    {timerOn && <button onClick={() => setTimerOn(false)}>Stop</button>}
-                    {!timerOn && time > 0 && (
-                        <button onClick={() => setTime(0)}>Reset</button>
-                    )}
-                    {!timerOn && time > 0 && (
-                        <button onClick={() => setTimerOn(true)}>Resume</button>
-                    )}
+                    <div className="button-start">
+                        {!timerOn && time === 0 && (
+                            <button onClick={() => setTimerOn(true)} className="button-text-start">Start Recording</button>
+                        )}
+                    </div>
+                    <div className="button-stop">
+                        <span className="stop-button"></span>
+                        {timerOn && <button onClick={() => setTimerOn(false)} className="button-text-stop">Stop Recording</button>}
+                    </div>
+                    <div className="button-reset">
+                        {!timerOn && time > 0 && (
+                            <button onClick={() => setTime(0)} className="button-text-reset">Reset</button>
+                        )}
+                    </div>
+                    <div className="button-resume">
+                        {!timerOn && time > 0 && (
+                            <button onClick={() => setTimerOn(true)} className="button-text-resume">Resume</button>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>
