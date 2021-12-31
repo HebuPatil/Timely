@@ -45,7 +45,7 @@ const statistics = () => {
                         <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
                         <span>{("0" + ((time / 10) % 100)).slice(-2)}</span>
                     </div>
-                    <span className="small-timer-text">/1hr</span>
+                    <span className="small-timer-text">/1 hr</span>
                 </div>
                 <div id="buttons">
                     <div className="button-start">
@@ -53,10 +53,10 @@ const statistics = () => {
                             <button onClick={() => setTimerOn(true)} className="button-text-start">Start Recording</button>
                         )}
                     </div>
-                    <div className="button-stop">
+                    {timerOn && <button onClick={() => setTimerOn(false)} className="button-stop">
                         <span className="stop-button"></span>
-                        {timerOn && <button onClick={() => setTimerOn(false)} className="button-text-stop">Stop Recording</button>}
-                    </div>
+                        <span className="button-text-stop">Stop Recording</span>
+                    </button>}
                     <div className="button-reset">
                         {!timerOn && time > 0 && (
                             <button onClick={() => setTime(0)} className="button-text-reset">Reset</button>

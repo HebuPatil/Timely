@@ -75,7 +75,7 @@
   width: 314px;
   height: 92px;
   left: 26px;
-  top: 44px;
+  top: 61px;
   background: rgba(80, 212, 93, 0.15);
   border-radius: 14px;
 }
@@ -93,7 +93,7 @@
   width: 197px;
   height: 59px;
   left: 16px;
-  top: 19px;
+  top: 14px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -107,7 +107,7 @@
   width: 33px;
   height: 16px;
   left: 228px;
-  top: 52px;
+  top: 45px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -116,8 +116,10 @@
   color: #50D45D;
 }
 
-button {
-  /* smth goes here */
+.button {
+  position: absolute;
+  padding-left: 219px;
+  top: 181px;
 }
 
 #buttons button:nth-child(2) {
@@ -138,8 +140,11 @@ button {
   height: 32px;
   left: 187px;
   top: 181px;
+  margin-right: -219px;
   background: rgba(255, 59, 59, 0.15);
   border-radius: 9px;
+  border: none;
+  cursor: pointer;
 }
 
 .stop-button {
@@ -157,7 +162,7 @@ button {
   width: 111px;
   height: 17px;
   left: 32px;
-  top: 339px;
+  top: 6px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -184,7 +189,6 @@ button {
   /*smth goes here */
 }
 
-/*
 button:hover {
   background-color: rgb(173, 47, 28);
 }
@@ -196,4 +200,3 @@ button:active {
 button:focus {
   outline: 0;
 }
-*/
